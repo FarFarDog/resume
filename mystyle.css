@@ -5,8 +5,9 @@ body {
     min-height: 100vh;
     flex-direction: column;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0; 
+    background-color: #cb7575; 
     color: #000;
+    box-sizing: border-box;
 }
 
 .container {
@@ -27,7 +28,7 @@ img {
     height: auto;
     border-radius: 50%; 
     margin: 0 auto 20px; 
-    border: 4px solid #000000; 
+    border: 4px solid #e1f89d; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
@@ -45,12 +46,13 @@ p {
 
 section {
     margin-bottom: 30px;
-    text-align: left; 
+
 }
 
 h2 {
     font-size: 24px;
     margin-bottom: 15px;
+    text-align: justify;
     color: #336699; 
 }
 
@@ -63,3 +65,17 @@ ul {
 li {
     color: #000; 
 }
+
+ 
+@media only screen and (max-width:500px) {
+    .container {
+      width: 100%;
+      padding: 0;
+    }
+
+
+    .container{
+        display: contents;
+        flex-direction: column;
+    }
+  }
